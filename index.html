@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>Moodle Flowplayer Videolecture Sample</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script type="text/javascript" src="http://yandex.st/yui/3.5.0/yui/yui-min.js"></script>
+    <script type="text/javascript" src="js/flowplayer/flowplayer-3.2.6.min.js"></script>
+    <script type="text/javascript" src="js/flowplayer/flowplayer.controls-3.0.2.min.js"></script>
+    <script type="text/javascript" src="js/videolecture.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div id="screen"></div>
+        <div id="controls"></div>
+
+        <div id="camera-box" class="box">
+            <div class="handle"></div>
+            <div class="control little">a</div>
+            <div class="control big">A</div>
+            <div class="control closer">x</div>
+
+            <div id="camera"></div>
+        </div>
+
+        <script type="text/javascript">
+            var screenData = {
+                    'server': "rtmp://bbb.avalon.ru/oflaDemo/",
+                    'dir': "lectures/UNIX-ADM/2011-05-03.2",
+                    'flv': "screen.x264.flv"
+                },
+                cameraData = {
+                    'server': "rtmp://bbb.avalon.ru/oflaDemo/",
+                    'dir': "lectures/UNIX-ADM/2011-05-03.2",
+                    'flv': "camera.x264.flv"
+                }
+        </script>
+</div>
+</body>
+</html> 
